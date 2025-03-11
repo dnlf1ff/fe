@@ -1,0 +1,93 @@
+A: &id001 !!python/tuple
+- 0.5
+- 0
+AA: &id002 !!python/tuple
+- 0.5
+- 0.75
+- 0.25
+B: &id003 !!python/tuple
+- 0
+- 0.5
+C: &id004 !!python/tuple
+- 0.5
+- 1
+D: !!python/tuple
+- 0
+- 0.5
+E: !!python/tuple
+- 0.5
+- 0
+F: !!python/tuple
+- 0.5
+- 1
+G: !!python/tuple
+- 0.5
+- 0
+H: !!python/tuple
+- 0.5
+- 0
+I: !!python/tuple
+- 0.5
+- 1
+J: !!python/tuple
+- 0.5
+- 1
+K: !!python/tuple
+- 0.5
+- 1
+L: !!python/tuple
+- 0
+- 0.5
+M: &id005 !!python/tuple
+- 1
+- 1.5
+N: !!python/tuple
+- 0
+- 0.5
+O: &id006 !!python/tuple
+- 0
+- 1
+- 0.5
+P: !!python/tuple
+- 0.5
+- 1
+Q: !!python/tuple
+- 0.5
+- 1
+R: !!python/tuple
+- 0.5
+- 1
+S: !!python/tuple
+- 0
+- 0.5
+T: !!python/tuple
+- 0.5
+- 0
+U: !!python/tuple
+- 0.5
+- 1
+V: !!python/tuple
+- 0.5
+- 0
+W: !!python/tuple
+- 0
+- 0.5
+X: &id007 !!python/tuple
+- 0.5
+- 0.25
+Y: &id008 !!python/tuple
+- 0.5
+- 0.75
+Z: &id009 !!python/tuple
+- 0.5
+- 0.25
+- 0.75
+*id001: V
+*id002: AA
+*id003: W
+*id004: U
+*id005: M
+*id006: O
+*id007: X
+*id008: Y
+*id009: Z

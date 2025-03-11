@@ -1,0 +1,198 @@
+a1:
+  label_int: A
+  label_vac: a
+  p: 1
+  q: 1
+  q_pos:
+  - 0.5
+  - 0.5
+  - 0
+a2:
+  label_int: B
+  label_vac: a
+  p: 1
+  q: 1
+  q_pos:
+  - 0
+  - 0
+  - 0.5
+b1:
+  label_int: C
+  label_vac: ab
+  p: 2
+  q: 1
+  q_pos:
+  - 0.5
+  - 0.5
+  - 1
+  vac:
+  - 1
+  - 3
+b2:
+  label_int: B
+  label_vac: ab
+  p: 2
+  q: 1
+  q_pos:
+  - 0
+  - 0
+  - 0.5
+  vac:
+  - 1
+  - 3
+b3:
+  label_int: A
+  label_vac: ab
+  p: 2
+  q: 1
+  q_pos:
+  - 0.5
+  - 0.5
+  - 0
+  vac:
+  - 1
+  - 3
+c1:
+  label_int: C
+  label_vac: ca
+  p: 2
+  q: 1
+  q_pos:
+  - 0.5
+  - 0.5
+  - 1
+  vac:
+  - 0
+  - 1
+c2:
+  label_int: A
+  label_vac: ca
+  p: 2
+  q: 1
+  q_pos:
+  - 0.5
+  - 0.5
+  - 0
+  vac:
+  - 0
+  - 1
+d:
+  label_int: AC
+  label_vac: nan
+  p: 0
+  q: 2
+  q_pos:
+  - - 0.5
+    - 0.5
+    - 0
+  - - 0.5
+    - 0.5
+    - 1
+e:
+  label_int: CD
+  label_vac: nan
+  p: 0
+  q: 2
+  q_pos:
+  - - 0.5
+    - 0.5
+    - 1
+  - - 0.5
+    - 1
+    - 0.5
+f:
+  label_int: EF
+  label_vac: nan
+  p: 0
+  q: 2
+  q_pos:
+  - - 0
+    - 0.5
+    - 0
+  - - 1
+    - 1.5
+    - 1
+g:
+  label_int: BG
+  label_vac: nan
+  p: 0
+  q: 2
+  q_pos:
+  - - 0
+    - 0
+    - 0.5
+  - - 0
+    - 1
+    - 0.5
+h:
+  label_int: CD
+  label_vac: nan
+  p: 0
+  q: 2
+  q_pos:
+  - - 0.5
+    - 0.5
+    - 1
+  - - 0.5
+    - 1
+    - 0.5
+i:
+  label_int: CB
+  label_vac: nan
+  p: 0
+  q: 2
+  q_pos:
+  - - 0.5
+    - 0.5
+    - 1
+  - - 0
+    - 0
+    - 0.5
+j:
+  label_int: AC
+  label_vac: nan
+  p: 0
+  q: 2
+  q_pos:
+  - - 0.5
+    - 0.5
+    - 0
+  - - 0.5
+    - 0.5
+    - 1
+k:
+  label_int: AH
+  label_vac: nan
+  p: 0
+  q: 2
+  q_pos:
+  - - 0.5
+    - 0.5
+    - 0
+  - - 0
+    - 0.5
+    - 0.5
+l:
+  label_int: IJ
+  label_vac: a
+  p: 1
+  q: 2
+  q_pos:
+  - - 0.5
+    - 0.5
+    - 0.25
+  - - 0.5
+    - 0.5
+    - 0.75
+m:
+  label_int: KL
+  label_vac: a
+  p: 1
+  q: 2
+  q_pos:
+  - - 0.5
+    - 0.25
+    - 0.75
+  - - 0.5
+    - 0.75
+    - 0.25

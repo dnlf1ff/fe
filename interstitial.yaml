@@ -1,0 +1,60 @@
+A: &id001 !!python/tuple
+- 0.5
+- 0.5
+- 0
+*id001: A
+B: &id002 !!python/tuple
+- 0
+- 0
+- 0.5
+*id002: B
+C: &id003 !!python/tuple
+- 0.5
+- 0.5
+- 1
+*id003: C
+D: &id004 !!python/tuple
+- 0.5
+- 1
+- 0.5
+*id004: D
+E: &id005 !!python/tuple
+- 0
+- 0.5
+- 0
+*id005: E
+F: &id006 !!python/tuple
+- 1
+- 1.5
+- 1
+*id006: F
+G: &id007 !!python/tuple
+- 0
+- 1
+- 0.5
+*id007: G
+H: &id008 !!python/tuple
+- 0
+- 0.5
+- 0.5
+*id008: H
+I: &id009 !!python/tuple
+- 0.5
+- 0.5
+- 0.25
+*id009: I
+J: &id010 !!python/tuple
+- 0.5
+- 0.5
+- 0.75
+*id010: J
+K: &id011 !!python/tuple
+- 0.5
+- 0.25
+- 0.75
+*id011: K
+L: &id012 !!python/tuple
+- 0.5
+- 0.75
+- 0.25
+*id012: L

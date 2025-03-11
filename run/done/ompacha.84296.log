@@ -1,0 +1,16 @@
+GPU 5 assigned to the job
+SLURM_NTASKS: 1
+Traceback (most recent call last):
+  File "/home/jinvk/steel/elastic.py", line 78, in <module>
+    strain_opt(runner, mlp)
+  File "/home/jinvk/steel/elastic.py", line 31, in strain_opt
+    fire=FIRE2(sf,logfile=os.path.join(os.environ['LOG'],mlp,f'{mlp}.strain.log'),trajectory=os.path.join(os.environ['TRAJ'],mlp,f'{mlp}.strain.traj'))
+  File "/home/jinvk/.venv/piX/lib64/python3.10/site-packages/ase/optimize/fire2.py", line 117, in __init__
+    Optimizer.__init__(self, atoms, restart, logfile, trajectory, **kwargs)
+  File "/home/jinvk/.venv/piX/lib64/python3.10/site-packages/ase/optimize/optimize.py", line 344, in __init__
+    super().__init__(
+  File "/home/jinvk/.venv/piX/lib64/python3.10/site-packages/ase/optimize/optimize.py", line 117, in __init__
+    self.logfile = self.openfile(file=logfile, comm=comm, mode='a')
+  File "/home/jinvk/.venv/piX/lib64/python3.10/site-packages/ase/utils/__init__.py", line 733, in openfile
+    return self.closelater(open(file, mode=mode, encoding=encoding))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jinvk/steel/log/ompa_cha_FT/ompa_cha_FT.strain.log'

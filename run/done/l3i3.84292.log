@@ -1,0 +1,6 @@
+GPU 1 assigned to the job
+SLURM_NTASKS: 1
+/home/jinvk/.venv/piX/lib64/python3.10/site-packages/sevenn/util.py:194: UserWarning: interaction_type not in config, using default value nequip
+  warnings.warn(f'{k} not in config, using default value {v}', UserWarning)
+/home/jinvk/.venv/piX/lib64/python3.10/site-packages/sevenn/util.py:194: UserWarning: interaction_type not in config, using default value nequip
+  warnings.warn(f'{k} not in config, using default value {v}', UserWarning)

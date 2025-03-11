@@ -1,0 +1,4 @@
+Note: please select gres to use GPUs
+SLURM_NTASKS: 1
+No CUDA runtime is found, using CUDA_HOME='/TGM/Apps/CUDA/12.1.0'
+slurmstepd: error: *** JOB 84417 ON n015 CANCELLED AT 2025-03-11T10:27:16 ***

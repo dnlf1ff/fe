@@ -1,0 +1,12 @@
+GPU 0 assigned to the job
+SLURM_NTASKS: 1
+Traceback (most recent call last):
+  File "/home/jinvk/steel/pureFe.py", line 211, in <module>
+    main()
+  File "/home/jinvk/steel/pureFe.py", line 205, in main
+    surface_bulk(runner, mlp)
+  File "/home/jinvk/steel/pureFe.py", line 165, in surface_bulk
+    df=conf.load_pickle(f'{mlp}/{mlp}+all', task=False)
+  File "/home/jinvk/.dlfjs/emBARK/embark/conf.py", line 58, in load_pickle
+    with open(file, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jinvk/steel/jar/omat/omat+all.pkl'

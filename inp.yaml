@@ -1,0 +1,13 @@
+name: pureFe
+pbe: 
+dataset:
+system: Fe
+prefix: .dlfjs
+task:
+    - lattice_parameter
+    - vacancy_formation_energy
+    - elastic_tensor
+    - migration_energy
+mlp:
+    - seven
+

@@ -1,0 +1,56 @@
+GPU 5 assigned to the job
+SLURM_NTASKS: 1
+Traceback (most recent call last):
+  File "/home/jinvk/steel/elastic.py", line 78, in <module>
+    strain_opt(runner, mlp)
+  File "/home/jinvk/steel/elastic.py", line 32, in strain_opt
+    fire.run(fmax=1e-3)
+  File "/home/jinvk/.venv/svnP/lib64/python3.10/site-packages/ase/optimize/optimize.py", line 414, in run
+    return Dynamics.run(self, steps=steps)
+  File "/home/jinvk/.venv/svnP/lib64/python3.10/site-packages/ase/optimize/optimize.py", line 283, in run
+    for converged in Dynamics.irun(self, steps=steps):
+  File "/home/jinvk/.venv/svnP/lib64/python3.10/site-packages/ase/optimize/optimize.py", line 254, in irun
+    self.step()
+  File "/home/jinvk/.venv/svnP/lib64/python3.10/site-packages/ase/optimize/fire2.py", line 173, in step
+    f = optimizable.get_forces()
+  File "/home/jinvk/.venv/svnP/lib64/python3.10/site-packages/ase/filters.py", line 29, in get_forces
+    return self.filterobj.get_forces()
+  File "/home/jinvk/.venv/svnP/lib64/python3.10/site-packages/ase/filters.py", line 266, in get_forces
+    stress = self.atoms.get_stress(include_ideal_gas=self.include_ideal_gas)
+  File "/home/jinvk/.venv/svnP/lib64/python3.10/site-packages/ase/atoms.py", line 859, in get_stress
+    stress = self._calc.get_stress(self)
+  File "/home/jinvk/.venv/svnP/lib64/python3.10/site-packages/ase/calculators/abc.py", line 33, in get_stress
+    return self.get_property('stress', atoms)
+  File "/home/jinvk/.venv/svnP/lib64/python3.10/site-packages/ase/calculators/calculator.py", line 538, in get_property
+    self.calculate(atoms, [name], system_changes)
+  File "/home/jinvk/.venv/svnP/lib64/python3.10/site-packages/sevenn/calculator.py", line 291, in calculate
+    self.results = self.output_to_results(self.model(data))
+  File "/home/jinvk/.venv/svnP/lib64/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jinvk/.venv/svnP/lib64/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jinvk/.venv/svnP/lib64/python3.10/site-packages/sevenn/nn/sequential.py", line 306, in forward
+    input = self._forward_wrapper(input)
+  File "/home/jinvk/.venv/svnP/lib64/python3.10/site-packages/sevenn/nn/sequential.py", line 302, in _forward_wrapper
+    return self._forward(input)
+  File "/home/jinvk/.venv/svnP/lib64/python3.10/site-packages/sevenn/nn/sequential.py", line 265, in _seq
+    data = module(data)
+  File "/home/jinvk/.venv/svnP/lib64/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jinvk/.venv/svnP/lib64/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jinvk/.venv/svnP/lib64/python3.10/site-packages/sevenn/nn/convolution.py", line 467, in forward
+    weight = self.weight_nn(data[self.key_weight_input])
+  File "/home/jinvk/.venv/svnP/lib64/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jinvk/.venv/svnP/lib64/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jinvk/.venv/svnP/lib64/python3.10/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+  File "/home/jinvk/.venv/svnP/lib64/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jinvk/.venv/svnP/lib64/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jinvk/.venv/svnP/lib64/python3.10/site-packages/e3nn/nn/_fc.py", line 47, in forward
+    x = x @ w
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 9.71 GiB. GPU 0 has a total capacity of 23.67 GiB of which 8.33 GiB is free. Process 772184 has 8.75 GiB memory in use. Including non-PyTorch memory, this process has 6.59 GiB memory in use. Of the allocated memory 6.15 GiB is allocated by PyTorch, and 194.23 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

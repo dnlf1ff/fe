@@ -1,0 +1,8 @@
+GPU 0 assigned to the job
+SLURM_NTASKS: 1
+Traceback (most recent call last):
+  File "/home/jinvk/steel/pureFe.py", line 211, in <module>
+    main()
+  File "/home/jinvk/steel/pureFe.py", line 206, in main
+    conf.save_pickle(df, f'{mlp}/{mlp}+all', task=False)
+UnboundLocalError: local variable 'df' referenced before assignment

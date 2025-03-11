@@ -1,0 +1,11 @@
+SLURM_NTASKS: 4
+Traceback (most recent call last):
+  File "/home/hansw/jinvk/fe/elastic.py", line 77, in <module>
+    runner=sevennRunner(mlp)
+  File "/home/hansw/jinvk/emBARK/embark/mlp.py", line 26, in __init__
+    self.model_path
+  File "/home/hansw/jinvk/emBARK/embark/mlp.py", line 32, in model_path
+    model=os.path.join(os.environ['MLP'],self.mlp,'checkpoint_best.pth')
+  File "/home/hansw/miniconda3/envs/jin_p10t5c121/lib/python3.10/os.py", line 680, in __getitem__
+    raise KeyError(key) from None
+KeyError: 'MLP'

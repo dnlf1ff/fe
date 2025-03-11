@@ -1,0 +1,11 @@
+SLURM_NTASKS: 4
+Traceback (most recent call last):
+  File "/home/hansw/jinvk/fe/elastic.py", line 18, in <module>
+    conf=taskCONF(cwd)
+  File "/home/hansw/jinvk/emBARK/embark/conf.py", line 91, in __init__
+    super().__init__(dir)
+  File "/home/hansw/jinvk/emBARK/embark/conf.py", line 17, in __init__
+    self.system_conf=self.load_yaml('system')
+  File "/home/hansw/jinvk/emBARK/embark/conf.py", line 33, in load_yaml
+    with open(file, 'r') as inp:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/hansw/jin/emBARK/config/system.yaml'

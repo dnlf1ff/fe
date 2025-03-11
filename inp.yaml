@@ -2,7 +2,7 @@ name: pureFe
 pbe: 
 dataset:
 system: Fe
-prefix: .dlfjs
+prefix: jinvk
 task:
     - lattice_parameter
     - vacancy_formation_energy

@@ -5,8 +5,8 @@
 #SBATCH --nodes=1      
 #SBATCH --ntasks=1
 #SBATCH --time=12:00:00    
-#SBATCH --partition=gpu2	
-#SBATCH --nodelist=n014
+#SBATCH --partition=gpu3	
+#SBATCH --nodelist=n015
 #SBATCH --gres=gpu:1
 
 echo "SLURM_NTASKS: $SLURM_NTASKS"
